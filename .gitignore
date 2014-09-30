@@ -17,3 +17,4 @@ nbproject
 .dat*.*
 .ruby-version
 .ruby-gemset
+vendor/*/build-iPhoneSimulator

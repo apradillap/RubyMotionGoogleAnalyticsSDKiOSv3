@@ -1,5 +1,12 @@
 class WelcomeController < UIViewController
 
+  include GoogleAnalytics
+
+  def viewDidAppear(animated)
+    super
+    track_pageview("Welcome")
+  end
+
   def viewDidLoad
     view.backgroundColor = UIColor.whiteColor
     self.title = "Navigation Example"
